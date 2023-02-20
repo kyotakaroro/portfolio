@@ -1,0 +1,89 @@
+body{
+    background:hsl(216, 12%, 8%);
+}
+    main{width:30%;
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        color:white;
+      display: flex;
+      flex-direction: column;
+      
+    }
+    .star{display: block;
+        border: none;
+        background-color:hsl(213, 19%, 22%);
+        border-radius: 50%;
+        width:3em;
+        height: 3em;
+        text-align: center;
+    }
+    svg{position: relative;
+       top:0.3em;
+    }
+    #numbers{ display:flex;
+        justify-content: space-between;
+        
+    }
+    .numbtn{width:3em;
+        background-color: hsl(213, 19%, 22%);
+        cursor: pointer;
+        display: block;
+        color:grey;
+        border:none;
+        border-radius: 50%;
+    margin-top:1.5em;}
+    .numbtn:hover{
+        transition: 0.7s;
+        background-color: grey;
+        color:hsl(213, 19%, 18%);
+    }
+    .numbtn:focus{
+       background-color: hsl(25, 97%, 53%);
+       color:aliceblue;
+    }
+    #btn{
+        border: none;
+        width:100%;
+        border-radius: 1.4em;
+        background-color:hsl(25, 97%, 53%);
+       margin-top:1.5em;
+    }
+    #btn:hover{transition: 0.7s;
+        background-color: aliceblue;
+        color:hsl(25, 97%, 53%);
+    }
+    section{line-height: 3em;
+        border-radius: 1.5em;
+        padding:2em 0.5em;
+        background-color: hsl(213, 19%, 18%);
+        }
+        
+        h4{font-weight: 700;}
+        p{line-height: 1.5em;
+            display:block;font-weight: 400;
+            font-family: Overpass;
+            color: hsl(217, 12%, 63%)}
+    #thankyou-state {
+        display:none;
+        text-align: center;
+    }
+    .result{font-size: 1em;
+        margin:0 auto;
+        color:hsl(25, 97%, 53%);
+        background-color:hsl(213, 19%, 22%); ;
+        width:50%;
+        border-radius:1.4em ;
+    }
+    
+    .attribution {color: white; font-size: 11px; text-align: center; }
+    .attribution a { color: white;}
+    
+    @media screen and (max-width: 376px){
+        main{width:90%;}
+        section{
+           width:90%;
+        }
+        
+      }
