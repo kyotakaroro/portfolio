@@ -1,0 +1,98 @@
+
+    body{
+        font-family:Barlow-Semi-Condensed ;
+      font-size: 13px;
+      background-color: hsl(210, 46%, 95%);}
+    main{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        width:68%;
+        padding:0.5em;
+       
+        display: grid;
+      grid-template-areas:
+      "part1 part1  part2 part3 "
+      "part4 part5  part5 part3 "
+      "att    att    att   att";
+     
+      
+    }
+    section{
+       
+        border-radius: 0.5em;;
+        margin:1em;
+        padding:2em;
+    }
+   
+    .p-img{margin-right: 1em;
+      width:2.5em;
+      height:2.5em;
+      border-radius: 50%;
+     border: 2px solid rgba(0, 0, 0, 0.24);}
+    ul{padding:0px;
+        list-style-type:none;
+        
+    }
+  
+    .quot{top:0;
+       right:10%;
+        width:15%;
+        height:30%;
+        position: absolute;
+            
+    }
+    .pic-name{
+        display: flex;
+    }
+    .sp-content,.content1{ 
+        font-size: 2rem;
+        margin-top:0.5em;
+        font-size:1.3em;
+      font-weight: 600;}
+    .sp-content{position: relative;
+        color:whitesmoke;
+       }
+       .name{
+        padding:0.2em;
+        line-height: 1em;
+      color:white;
+       }
+       .vg{opacity: 50%;
+      color:white;}
+      .content1{ color:whitesmoke;
+     }
+      .content2{
+        font-size: 1rem;
+        margin-top:1em;
+        opacity: 70%; 
+        color:whitesmoke;}
+    .p1{ position: relative;
+         overflow: hidden;
+      background-color:hsl(263, 55%, 52%);
+      grid-area: part1;width:65vh;}
+    .p2{background-color: hsl(217, 19%, 35%);
+      grid-area: part2;width:30vh;}
+    .p3{background-color: hsl(0, 0%, 100%);
+      grid-area: part3;width:30vh}
+    .p4{background-color: hsl(0, 0%, 100%);
+      grid-area: part4;width:30vh;}
+    .p5{background-color: hsl(219, 29%, 14%);;
+      grid-area:part5;width:65vh;
+    }
+    .attribution { 
+        grid-area: att;
+        font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    @media screen and (max-width: 375px){
+        main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .p{position: relative;
+            width:45vh;
+            height:100%;
+         }}
