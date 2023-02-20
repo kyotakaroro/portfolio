@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Fraunces">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+  <link rel="stylesheet" type="text/css" href="preview-card.css" />
+  <title>Frontend Mentor | Product preview card component</title>
+  
+  
+</head>
+<body>
+  <div class="wrapper container-fluid">
+  <div class="card">
+    <picture>
+      <source srcset="./images/image-product-mobile.jpg" media="(max-width: 376px)">
+      <img class="image-responsive" src="./images/image-product-desktop.jpg" alt="perfume">
+    </picture>
+  
+  <div class="wrap" >
+    <div class="content">
+  <ul style="list-style-type:none;">
+  <li class="littleTitle">Preview</li>
+  <li class="bigTitle">Gabrielle Essence Eau De Parfum</li>
+  <li class="introduction">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+    Perfumer-Creator for the House of CHANEL.</li>
+
+  </ul>
+
+  <div class="price">
+  <div class="price1">$149.99</div>
+  <div class="price2">$169.99</div>
+  </div>
+</div>
+ <button style="cursor:pointer"><i class="fa fa-shopping-cart"></i>Add to Cart</button>
+</div>
+</div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">KYO</a>.
+  </div>
+</div>
+</body>
+</html>
