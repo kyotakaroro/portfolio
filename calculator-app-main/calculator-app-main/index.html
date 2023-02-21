@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.google.com/specimen/League+Spartan">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+  <link rel="stylesheet" type="text/css" href="calculator.css" />
+  <title>Calculator app</title>
+</head>
+<body>
+ <!--计算器-->
+  <main class="calculator">
+     <!--模式转换按钮-->
+     <p class="mode-num">1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3</p>
+     <section>
+      <p class="calc">calc</p>
+      <div class="wrapper">
+        <p class="theme">THEME</p> 
+      <div class="tri-state"> 
+      <div>              
+        <input type="radio" name="event" class="button" id="one" >
+        <input type="radio" name="event" class="button" id="two">
+          <input type="radio" name="event" class="button"id="three">
+    </div>
+  </div>
+  </div>
+</section>
+
+      <div class="calculator-result">0</div>
+    <div class="calculator-keys">
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button class="key--operator fordel" data-action="for-delete">DEL</button>
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button class="key--operator" data-action="add">+</button>
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button class="key--operator" data-action="subtract">-</button>
+      <button data-action="decimal">.</button>
+      <button>0</button>
+      <button class="key--operator" data-action="divide">/</button>
+      <button class="key--operator" data-action="multiply">&times;</button>
+      <button class="reset" data-action="reset">RESET</button>
+      <button class="key--equal" data-action="calculate">=</button>
+   
+  </div>
+
+  
+</main>
+<div class="attribution navbar-fixed-bottom">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="#">Kyo</a>.
+  <script src="./calculator.js">
+   
+  </script>
+</body>
+</html>
