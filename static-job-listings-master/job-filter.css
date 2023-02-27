@@ -1,0 +1,191 @@
+
+body{ background-color: hsl(180, 52%, 96%);
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    
+ }
+ .header-img{
+    width:100%;
+    height:10em;
+    background-color: hsl(180, 29%, 50%);
+    position: relative;
+    
+ }
+ .here{width:70%;
+    height:4em;
+  position: absolute;
+  top:15%;
+  left:15%;
+   display: flex;
+    background-color: white;
+    border-radius: 0.5em;
+   box-shadow:0 0.2em 0.2em hsl(180, 8%, 52%);
+    display: none;
+    padding-top:0.6em;
+    padding-left: 0.5em;
+   
+ }
+ section{
+    width:100%;
+    font-size:15px;
+    font-family: League Spartan;
+    font-weight: 700;
+    position: absolute;
+    top:25%;
+    
+ }
+ 
+ img{width:5em;
+    height: 5em;}
+    li{list-style: none;
+        margin-right:0.5em;
+      color:hsl(180, 29%, 50%);
+    }
+    ul{padding:0;
+        display: flex;
+    align-items: center;
+    }
+    a{color:hsl(180, 14%, 20%);
+        position: relative;
+        bottom: 0.4em;}
+   
+        a:hover{text-decoration: none;
+            color:hsl(180, 29%, 50%);}
+ article{width:70%;
+    padding:1em 0.7em;
+  border-radius: 0.5em;
+  box-shadow:0 0.2em 0.2em hsl(180, 8%, 52%);
+     background-color: white;
+     display: flex;
+     justify-content: space-between;
+     position: relative;
+     left:15%;
+     margin-bottom: 1em;
+ }
+ .filter{align-self: center;
+    height:100%;
+    margin-top: 1em;
+    }
+    button{font-size: 15px;
+        outline: none;
+            border:0;
+            background-color: transparent;
+            border-radius: 0.5em;
+            background-color: hsl(180, 31%, 95%);
+            padding:0.5em;
+            color:hsl(180, 29%, 50%);
+           
+    }
+.here-tab{width:fit-content;
+    height: fit-content;
+    font-size: 15px;
+    outline: none;
+        border:0;
+        background-color: hsl(180, 31%, 95%);
+        border-radius: 0.5em;
+     float: left;
+     align-self: center;
+     margin-right: 0.2em;
+
+}
+    .clear{position:absolute;
+        left:95%;
+        top:30%;
+        color:hsl(180, 29%, 50%);
+        
+    }
+    .cancel:hover{
+        background-color: black;
+        color:white;
+       
+    }
+    button:hover{
+        color:white;
+    background-color:hsl(180, 29%, 50%) ;
+    }
+    article:hover{
+        border-left: 0.3em solid hsl(180, 29%, 50%) ;
+    }
+    .title{
+        float: right;
+        margin-left:2em;
+    }
+    .detail li{font-weight: 500;
+        color:hsl(180, 8%, 52%);}
+    .new{padding:0.1em 1em;
+        font-size:0.4em;
+    color:white;
+    background-color: hsl(180, 29%, 50%);
+    border-radius: 25px;}
+    .feature{
+        color:white;
+        background-color: black;
+        border-radius: 25px;
+        padding:0.1em 1em;
+        font-size:0.4em;
+    }
+
+
+.attribution { font-size: 11px; position: absolute;top:200%;left:50%;
+transform: translate(-50%);}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/*size*/
+
+@media screen and (max-width: 376px){
+    .here{top:8em;
+        height:10em;
+        width:70%;
+        
+      }
+      .here-tab{
+        transform: scale(0.8);
+        
+      }
+    img:not(.header-img){
+        position: absolute;
+        top:-2.5em;
+      }
+      section{top:20em;
+        right:5%;
+      }
+      .wrap{padding-top: 2em;
+        
+        display: flex;
+       
+      }
+      .title{
+        font-size: small;
+        margin-left: 0px;
+     }
+     .detail{font-size: x-small;}
+      
+      article{font-size: smaller;
+        display: flex;
+        flex-direction: column;
+       min-width:80%;
+       margin-bottom: 4em;
+      }
+      .filter{
+        border-top: 1px solid hsl(180, 8%, 52%);
+       width:90%;
+       align-self:auto;
+        padding-top: 1em;
+       padding-right: 10%;
+       display:flex;
+       flex-wrap: wrap;
+      }
+      .filter button{
+        font-size: 13px;
+        margin-right:2px;
+        margin-bottom: 2px;
+      }
+      .clear{
+      top:40%;
+      transform: translate(-80%);
+      }
+      .attribution { font-size: 11px; position: absolute;top:800%;left:50%;
+        transform: translate(-50%);}
+    }
