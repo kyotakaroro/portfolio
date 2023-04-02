@@ -1,0 +1,248 @@
+body{
+    
+    background-color:hsl(228, 33%, 97%);
+}
+section{
+    margin:0 auto;
+   ;
+    width:50%;
+    height:fit-content;
+}
+p{display:unset;}
+
+/*评论的式样*/
+.comment{display: grid;
+ grid-template-columns: 10% 45% 45%;
+grid-template-rows:30% 70%;
+width:100%;
+height:fit-content;
+padding:1.7em 1em 1em 1em;
+margin-top:1em;
+background-color: hsl(0, 0%, 100%);
+border-radius: 5px;
+}
+
+div .replies{width:100%;
+margin-left:5%;
+border-left: 2px solid hsl(223, 19%, 93%);
+height:fit-content;
+}
+
+.replies .comment {
+    width:90%;
+    margin-left: 5%;
+    height:fit-content;
+}
+.replies .for-comments-input{
+    width:90%;
+    margin-left:5%;
+}
+
+.score-btns{
+height: fit-content;
+background-color: hsl(228, 33%, 97%);
+color:hsl(238, 40%, 52%);
+font-weight: 700;
+grid-column: 1 / 2;
+grid-row:1/3;
+list-style: none;
+padding:0;
+width:60%;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+border-radius: 7px;}
+.score-btns button{
+    background-color: hsl(228, 33%, 97%);
+    border:1px solid transparent;
+    color:grey;
+    padding:4px;
+}
+.user{display: flex;
+    justify-content: space-around;
+    grid-column: 2 / 3;
+    grid-row:1/2;
+height: fit-content;
+}
+.user-name{
+    font-weight: 700;
+}
+.created-time{
+    color: hsl(211, 10%, 45%);
+}
+img{width:2em;
+height:2em;}
+a{grid-column: 3 / 4;
+    grid-row:1/2;
+color:hsl(238, 40%, 52%);
+height:fit-content;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+font-weight: 700;
+cursor: pointer;
+}
+
+a img{transform: scale(50%);}
+.content{grid-column: 2 / 4;
+    grid-row:2/3;
+height: fit-content;}
+/*you*/
+.you{
+    background-color:hsl(238, 40%, 52%) ;
+    color:white;
+    font-family: Rubik;
+    padding: 0.5px 5px;
+}
+.you-btn{
+    display: flex;
+    justify-content: flex-end;
+}
+.you-btn .clear{color:hsl(358, 79%, 66%);}
+
+/*输入的式样*/
+.for-comments-input{
+padding:1em;
+margin-top:1em;
+background-color: hsl(0, 0%, 100%);
+border-radius: 5px;
+display:grid;
+grid-template-columns:10% 75% 15%;
+grid-template-rows:100% ;
+}
+.for-comments-input textarea{
+    height:5em;
+    width:95%;
+    border-radius: 5px;
+    resize:none;
+}
+.for-comments-input button{
+    color:white;
+    background-color:hsl(238, 40%, 52%);
+    grid-column:3/4;
+    grid-row:1/2;
+    height:fit-content;
+    border-radius:5px;
+    border:0;
+    padding:0.5em;
+}
+.for-comments-input img{
+    grid-column:1/2;
+    grid-row:1/2;
+}
+/*发表的评论*/
+.new-replies{
+    width:95%;
+    margin-left: 5%;
+    border-left: 2px solid hsl(223, 19%, 93%);
+}
+.new-replies .comment{
+    width:95%;
+    margin-left:5%;
+}
+.replies .new-replies {
+    width:95%;
+    margin-left:0%;
+    border-left: none;
+}
+/*弹窗*/
+.popup{
+    display: none;
+    position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width:20em;
+      background-color: white;
+      border-radius: 5px;
+      border:1px solid black;
+      padding:1.5em;
+}
+.popup ul{
+    padding:0;
+    margin:0;
+}
+.popup li button{
+    padding:1em 1.5em;
+    font-size: 10px;
+    
+}
+.edit-input{height:fit-content;
+    grid-column: 2/4; 
+display: flex;
+flex-direction: column;}
+.edit-input textarea{
+    border-radius: 5px;
+    resize:none;
+    min-height:70px;
+}
+.edit-input button{
+    margin-top: 0.5em;
+    margin-left: 80%;
+    width:20%;
+    background-color:hsl(238, 40%, 52%);
+    color:white;
+    border-radius: 5px;
+    border: none;
+    padding:0.5em 1em;
+}
+/*screen-size*/
+    @media screen and (max-width: 450px){
+        section{width:90%;}
+        .comment{
+ grid-template-columns: 50% 50%;
+grid-template-rows:20% 60% 20%;
+padding:1em;
+margin-top:1em;
+        }
+        .score-btns{
+            grid-column: 1 / 2;
+            grid-row:3/4;
+            list-style: none;
+            padding:0;
+            margin-top:1em;
+            flex-direction: row;
+        }
+        li{float: left;}
+        .user{display: flex;
+                grid-column: 1/ 3;
+                grid-row:1/2;}
+            .user p{
+                    font-size: x-small;
+                }
+            
+        .reply{grid-column: 2 / 3;
+                grid-row:3/4;
+                margin-top:1em;
+            }
+        .comment p{grid-column: 1 / 4;
+                grid-row:2/3;}
+
+        .for-comments-input{
+                    grid-template-columns:100%;
+                    grid-template-rows:80% 20%;
+                    }
+        .for-comments-input button{
+                grid-column:2/3 ;
+                grid-row:2/3;
+                margin-left:-4em;
+                width:fit-content;
+                }
+        .for-comments-input img{
+                grid-column:1/2;
+                grid-row:2/3;
+            }
+        .for-comments-input textarea{
+                width:100%;
+                grid-column:1/2;
+                grid-row:1/2;
+            }
+            /*you*/
+            .you-btn{
+                grid-column: 2 / 3;
+                grid-row:3/4;
+                margin-top:1em;
+            }
+            
+    }
