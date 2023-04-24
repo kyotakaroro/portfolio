@@ -1,0 +1,118 @@
+body{
+    background-color:hsl(0, 0%, 94%) ;
+}
+section{
+    font-family: Poppins;
+    background-color: white;
+    width:50%;
+    height:70%;
+    border-radius: 50px 50px 150px 50px ;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    padding: 2.5em;
+    display: flex;
+}
+.part{
+    display: flex;
+    flex-direction: column;
+}
+.input-part{
+    display: flex;
+    flex-direction: column; 
+    font-weight: 400i;
+ 
+}
+.for-input{
+   display: flex;
+   width:80%;
+
+}
+.for-input input{
+    width:70%;
+    font-size: 32px;
+    font-weight: 800i;
+    border-radius: 5px;
+}
+.for-input input:focus{
+outline-color: hsl(259, 100%, 65%);
+}
+/*违背输入规则时*/
+.error1{
+   border:2px solid red;
+}
+.error2{
+    color:red;
+}
+/*https://juejin.cn/post/6844904023493984263*/
+.btn{
+    position: relative;
+    text-align:end;
+    font-size: 14px;
+    color: #999;
+   overflow: visible;
+}
+.btn::before{
+    content: '';
+    display: inline-block;
+    width: 87%;
+    height: 1px;
+    position: absolute;
+    background: #ccc;
+    top: 50%;
+}
+.btn::before{
+    transform: translateX(-100%);
+}
+
+/**/
+button{padding:1em;
+    border-radius: 50%;
+    background-color:hsl(259, 100%, 65%);
+    border:0;   
+}
+button:hover{
+    background-color: black;
+}
+
+ul{font-size: 5em;
+    font-weight: 900;
+    font-style: oblique;
+    padding: 0;
+    list-style: none;
+}
+ul span{color:hsl(259, 100%, 65%);}
+
+@media screen and (max-width: 450px){
+    section{
+        background-color: white;
+        width:95%;
+    }
+    .part1{
+        padding:0;
+    }
+    .input-part{
+     font-size: small;
+       transform: scale(0.8);
+    }
+    .input-part input{
+        width:3em;
+    }
+    ul{font-size: 3em;
+    }
+    .btn{
+        text-align:center;
+    }
+    .btn::before,.btn::after{
+        content: '';
+        display: inline-block;
+        width: 40%;
+        height: 1px;
+        position: absolute;
+        background: #ccc;
+        top: 50%;
+    }
+    
+    
+}
