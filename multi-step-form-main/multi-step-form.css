@@ -1,0 +1,191 @@
+
+
+    body{
+    background-color:hsl(229, 24%, 87%);
+    display: flex;
+    height: 100vh;
+  justify-content: center;
+  align-items: center;
+  
+   }
+
+   main{
+    font-family:'Ubuntu';
+    overflow: hidden;
+    padding:0.5em;
+    border-radius: 10px;
+    width: 100%;
+    
+    background-color: hsla(0, 0%, 100%,1);
+    display: flex;
+    position: relative;
+}
+
+
+ul{
+    list-style:none;
+    height:50%;
+    width:80%;
+   padding-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: 700;
+    }
+    .rightone{
+        line-height: 1;    
+        margin-left: 1em;
+        font-size: xx-small;
+        display: flex;
+      
+        justify-content: center;
+        flex-direction: column;
+    }
+    .leftone{
+        color:white;
+        width:30px;
+        height:30px;
+        border-radius:50%;
+       text-align: center;
+        font-size: xx-small;
+        display: flex;
+  align-items: center; 
+  justify-content: center;
+  transform: scale(80%);
+  border:1px solid white
+    }
+    li{font-weight: 540;
+        display: flex;
+        justify-content:center;
+        margin:0.2em
+    }
+    .greyone{
+        font-size:xx-small;
+        color:hsl(229, 24%, 87%,0.5);
+        margin:0;
+        padding:0;
+        transform: scale(80%);
+        
+    }
+    .whiteone{
+        color: aliceblue;
+        font-size: xx-small;
+        margin:0;
+        padding:0;
+        transform: scale(80%);
+    }
+
+#sider{
+    width: 300px;
+    height:400px;
+    background: url("./assets/images/bg-sidebar-desktop.svg") no-repeat;
+    background-size:contain;
+    
+
+    }
+   #main-part{
+    display: flex;
+    justify-content: center;
+    width:100%;
+   
+   }
+    #content{
+        display: flex;
+        flex-direction: column;
+    }
+    #btns{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .nextstep{
+        background-color: hsl(213, 96%, 18%);
+        color:white;
+        border-radius: 7px;
+        border: none;
+        float: left;
+        position: relative;
+        margin-top: 2em;
+        border-radius:7px;
+    font-size: small;
+    padding:0.5em 2em;
+    }
+    .goback{
+        position: relative;
+        margin-top:2em;
+        background-color:white;
+        border:none;
+        font-size: x-small;
+        color:hsl(231, 11%, 63%);
+    }
+    .price{
+       font-size: 5px;
+        margin:0;
+        padding:0;
+        color:grey;
+      
+    }
+input{
+    position: relative;
+    bottom: 0.5em;
+    border: none;
+}
+
+.confirm{
+    color:aliceblue;
+    border: none;
+    background-color:hsl(243, 100%, 62%);
+    border-radius:7px;
+    font-size: small;
+    padding: 0.1em 2em;
+    float: left;
+        position: relative;
+}
+
+.choose-one{
+   display: flex;
+   background-color:hsl(217, 100%, 97%);
+   justify-content: center ;
+   align-items: center;
+   font-size: xx-small;
+   border-radius: 7px;
+}
+
+/* toogle button*/
+
+
+  .toggle-button {
+    transform: scale(50%);
+    position: relative;
+    border: none;
+    outline: none;
+    background-color: #ccc;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .toggle-button::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 36px;
+    height: 36px;
+    background-color: #fff;
+    border-radius: 18px;
+    transition: all 0.3s ease;
+  }
+  
+  .toggle-button.on::before {
+    transform: translateX(60px);
+  }
+  
+  .toggle-button.on {
+    background-color:hsl(243, 100%, 62%);
+  }
+  
+
+  
